@@ -29,7 +29,7 @@ suspend fun fetchFlight(
         }
     }
     delay(500)
-    println("Combining flight data")
+    println("Combining flight data: ${System.currentTimeMillis() - start}")
 
     FlightStatus.parse(
         passengerName = passengerName,
